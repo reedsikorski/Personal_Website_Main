@@ -10,8 +10,6 @@
       crossorigin="anonymous"
     />
     <title>Reed Sikorski</title>
-
-    <script src="css.css"></script>
   </head>
   <body>
     <script
@@ -19,6 +17,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="myjs.js"></script>
     <div class="container">
       <div class="alert alert-warning d-flex align-items-center" role="alert">
         <svg
@@ -61,18 +60,20 @@
           </div>
           <div class="col">
             <div class="px-4 py-5 my-5 text-center border">
-              <h1 class="display-5 fw-bold text-body-emphasis">
-                Thanks for dropping by
-              </h1>
+              <h1
+                id="location"
+                class="display-5 fw-bold text-body-emphasis"
+              ></h1>
+              <input
+                type="text"
+                id="locationInput"
+                placeholder="Enter a city"
+              />
+              <button id="searchButton">Search</button>
               <div class="col-lg-10 mx-auto">
-                <p class="lead mb-4">
-                  Welcome to my site! I'm glad you decided to check it out. I
-                  have lots of experience with software development. If you have
-                  any questions, feel free to reach out on my
-                  <a href="https://www.linkedin.com/in/reed-sikorski-33049b212/"
-                    >LinkedIn</a
-                  >!
-                </p>
+                <p id="location"></p>
+                <p id="temperature"></p>
+                <p id="description"></p>
               </div>
             </div>
           </div>
@@ -94,5 +95,6 @@
         ></iframe>
       </div>
     </div>
+    <script src="css.css"></script>
   </body>
 </html>
