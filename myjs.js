@@ -22,7 +22,7 @@ function fetchWeather(location) {
     .then((data) => {
       locationElement.textContent = data.name;
       temperatureElement.textContent = `${Math.round(data.main.temp)}°C`;
-      descriptionElement.textContenet = data.weather[0].description;
+      descriptionElement.textContent = data.weather[0].description;
     })
     .catch((error) => {
       console.error("Error fetching weather data:", error);
