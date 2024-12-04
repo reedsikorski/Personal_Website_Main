@@ -7,8 +7,16 @@ const locationElement = document.getElementById("location");
 const temperatureElement = document.getElementById("temperature");
 const descriptionElement = document.getElementById("description");
 
+window.onload = function () {
+  defaultloc = "Chicago";
+  fetchWeather(defaultloc);
+  locationElement.innerHTML = defaultloc;
+};
+
 searchButton.addEventListener("click", () => {
   const location = locationInput.value;
+  locationElement.innerHTML =
+    location.charAt(0).toUpperCase() + location.slice(1);
   console.log(location);
   if (location) {
     fetchWeather(location);
@@ -26,12 +34,16 @@ async function fetchWeather(location) {
       throw new Error(`HTTP error! status: ${wresponse.status}`);
     }
     const weatherInfo = await wresponse.json();
-    console.log(weatherInfo);
+    displayWeather(weatherInfo);
   } catch (err) {
     console.error(err.message);
   }
 }
 
 function displayWeather(weather) {
-  console.log(weather);
+  let temp = weather.main.temp;
+  temperatureElement.innerHTML = temp + "°F";
+
+  let desc = weather.weather[0].description;
+  descriptionElement.innerHTML = desc.charAt(0).toUpperCase() + desc.slice(1);
 }

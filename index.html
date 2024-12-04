@@ -63,17 +63,22 @@
           </div>
           <div class="col">
             <div class="px-4 py-5 my-5 text-center border">
-              <h1>Weather App</h1>
-              <input
-                type="text"
-                id="locationInput"
-                placeholder="Enter a city"
-              />
+              <h1 class="display-5 fw-bold">Current Weather</h1>
+              <div class="input-group mb-3 justify-content-center">
+                <input
+                  type="text"
+                  id="locationInput"
+                  placeholder="Enter a city"
+                />
+              </div>
+
               <button id="searchButton">Search</button>
-              <div class="weather-info">
-                <h2 id="location"></h2>
-                <p id="temperature"></p>
-                <p id="description"></p>
+              <div class="card mt-3">
+                <div class="card-body">
+                  <h2 id="location"></h2>
+                  <p id="temperature"></p>
+                  <p id="description"></p>
+                </div>
               </div>
             </div>
           </div>
