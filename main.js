@@ -1,14 +1,15 @@
-const apiKey = "c7a7aba7687149ceaa340114242911";
-const apiUrl = "https://api.openweathermap.org/data/2.5/weather";
+const apiKey = "50be8ea5d271b0daabdfd3c527199276";
+const apiUrl = "https://api.openweathermap.com/data/2.5";
 
 const locationInput = document.getElementById("locationInput");
-const searchButton = document.querySelector(".searchButton");
+const searchButton = document.getElementById("searchButton");
 const locationElement = document.getElementById("location");
 const temperatureElement = document.getElementById("temperature");
 const descriptionElement = document.getElementById("description");
 
 searchButton.addEventListener("click", () => {
   const location = locationInput.value;
+  console.log(location);
   if (location) {
     fetchWeather(location);
   }
@@ -16,15 +17,12 @@ searchButton.addEventListener("click", () => {
 
 function fetchWeather(location) {
   const url = `${apiUrl}?q=${location}&appid=${apiKey}&units=metric`;
-
+  console.log(url);
   fetch(url)
-    .then((response) => response.json())
-    .then((data) => {
-      locationElement.textContent = data.name;
-      temperatureElement.textContent = `${Math.round(data.main.temp)}°C`;
-      descriptionElement.textContent = data.weather[0].description;
-    })
+    .then((weather) => weather.json())
     .catch((error) => {
       console.error("Error fetching weather data:", error);
     });
 }
+
+function displayWeather(weather) {}
