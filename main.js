@@ -15,13 +15,19 @@ window.onload = function () {
 
 searchButton.addEventListener("click", () => {
   const location = locationInput.value;
-  locationElement.innerHTML =
-    location.charAt(0).toUpperCase() + location.slice(1);
+  locationElement.innerHTML = formatLocation(location);
   console.log(location);
   if (location) {
     fetchWeather(location);
   }
 });
+
+function formatLocation(locationString) {
+  return locationString
+    .split(" ")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+    .join(" ");
+}
 
 async function fetchWeather(location) {
   const url = `${apiUrl}?q=${location}&units=imperial&appid=${apiKey}`;

@@ -31,7 +31,9 @@
             >
           </li>
           <li class="nav-item">
-            <a href="weather.html" class="nav-link">Weather</a>
+            <a href="../Personal_Website_2024_Q4/weather.html" class="nav-link"
+              >Weather</a
+            >
           </li>
           <li class="nav-item">
             <a href="../Personal_Website_2024_Q4/projects.html" class="nav-link"
@@ -45,29 +47,8 @@
           </li>
         </ul>
       </header>
-      <div class="alert alert-warning d-flex align-items-center" role="alert">
-        <svg
-          class="bi flex-shrink-0 me-2"
-          width="32"
-          height="32"
-          role="img"
-          aria-label="Warning:"
-        >
-          <use
-            xlink:href="node_modules/bootstrap-icons/bootstrap-icons.svg#exclamation-triangle-fill"
-          />
-        </svg>
-        <div>
-          Site currently under development! Please use my
-          <a href="https://www.linkedin.com/in/reed-sikorski-33049b212/"
-            >LinkedIn</a
-          >
-          for contact.
-        </div>
-      </div>
       <div class="p-5 text-center bg-body-tertiary rounded-3">
-        <h1 class="text-body-emphasis">Hey there</h1>
-        <p class="lead">welcome</p>
+        <h1 class="text-body-emphasis">Weather API Testing</h1>
       </div>
       <div class="container text-center" id="TopContainer">
         <div class="row">
@@ -90,18 +71,22 @@
           </div>
           <div class="col">
             <div class="px-4 py-5 my-5 text-center border">
-              <h1 class="display-5 fw-bold text-body-emphasis">
-                Thanks for dropping by
-              </h1>
-              <div class="col-lg-10 mx-auto">
-                <p class="lead mb-4">
-                  Welcome to my site! I'm glad you decided to check it out. I
-                  have lots of experience with software development. If you have
-                  any questions, feel free to reach out on my
-                  <a href="https://www.linkedin.com/in/reed-sikorski-33049b212/"
-                    >LinkedIn</a
-                  >!
-                </p>
+              <h1 class="display-5 fw-bold">Current Weather</h1>
+              <div class="input-group mb-4 justify-content-center">
+                <input
+                  type="text"
+                  id="locationInput"
+                  placeholder="Enter a city"
+                />
+              </div>
+
+              <button id="searchButton">Search</button>
+              <div class="card mt-3">
+                <div class="card-body">
+                  <h2 id="location"></h2>
+                  <p id="temperature"></p>
+                  <p id="description"></p>
+                </div>
               </div>
             </div>
           </div>
