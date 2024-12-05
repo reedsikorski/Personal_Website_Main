@@ -1,0 +1,10 @@
+.mb-500 {
+  margin-bottom: 25% !important;
+}
+body {
+  background-image: linear-gradient(
+    to bottom,
+    #ff7e5f,
+    #feb47b
+  ); /* From pink to orange */
+}
