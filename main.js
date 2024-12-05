@@ -7,6 +7,10 @@ const locationElement = document.getElementById("location");
 const temperatureElement = document.getElementById("temperature");
 const descriptionElement = document.getElementById("description");
 
+window.addEventListener("load", () => {
+  document.body.classList.add("loaded");
+});
+
 window.onload = function () {
   defaultloc = "Chicago";
   fetchWeather(defaultloc);
