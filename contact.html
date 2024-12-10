@@ -27,7 +27,7 @@
     ></script>
     <div class="container">
       <header class="d-flex justify-content-center py-3">
-        <ul class="nav nav-pills">
+        <ul class="nav">
           <li class="nav-item">
             <a href="index.html" class="nav-link active" aria-current="page"
               >Home</a
@@ -76,22 +76,21 @@
             >Please tell me why you are reaching out</label
           >
           <input
-            class="form-control"
+            class="form-select"
             list="datalistOptions"
             id="dataList"
             placeholder="Type to search..."
           />
           <datalist id="datalistOptions">
-            <option value="San Francisco"></option>
-            <option value="New York"></option>
-            <option value="Seattle"></option>
-            <option value="Los Angeles"></option>
-            <option value="Chicago"></option>
+            <option value="Recruiting"></option>
+            <option value="General Questions"></option>
+            <option value="Freelance Work"></option>
+            <option value="Need a friend"></option>
           </datalist>
 
           <div>
             <button
-              class="g-recaptcha"
+              class="g-recaptcha btn btn-primary"
               data-sitekey="reCAPTCHA_site_key"
               data-callback="onSubmit"
               data-action="submit"

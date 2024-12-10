@@ -9,6 +9,7 @@ body {
     linear-gradient(232deg, #009c0085 49%, transparent 70.05%),
     radial-gradient(circle at 63% 50%, #b637ec40 50%, transparent 56.05%); */
   background-color: #3267a3;
+  background-color: #594f4f;
   color: white !important;
   opacity: 0; /* Start fully transparent */
   transition: opacity 0.8s ease-in; /* Smooth fade-in */
@@ -16,4 +17,8 @@ body {
 
 body.loaded {
   opacity: 1;
+}
+
+.nav-link {
+  color: #9de0ad !important;
 }
