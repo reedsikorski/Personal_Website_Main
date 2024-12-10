@@ -18,7 +18,21 @@ window.onload = function () {
 };
 
 searchButton.addEventListener("click", () => {
+  // if (locationInput.value === !null) {
+  //   const location = locationInput.value;
+  // } else {
+  //   const location = "warren";
+  // }
   const location = locationInput.value;
+  console.log(location);
+  if (location === "") {
+    alert("Please enter a location! It doesn't work if you don't try!");
+    return;
+  } else {
+    const location = locationInput.value;
+    locationInput.value = "";
+  }
+
   locationElement.innerHTML = formatLocation(location);
   console.log(location);
   if (location) {

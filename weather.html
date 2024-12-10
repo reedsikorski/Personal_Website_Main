@@ -9,6 +9,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="indexcss.css" />
     <title>Reed Sikorski</title>
   </head>
   <body>
@@ -45,7 +46,7 @@
       <div class="container text-center" id="TopContainer">
         <div class="row">
           <div class="col">
-            <div class="px-4 py-5 my-5 text-center border">
+            <div class="card px-4 py-5 my-5 text-center border">
               <h1 class="display-5 fw-bold">Current Weather</h1>
               <div class="input-group mb-4 justify-content-center">
                 <input
@@ -55,13 +56,17 @@
                 />
               </div>
 
-              <button id="searchButton">Search</button>
-              <div class="card mt-3">
-                <div class="card-body">
-                  <h2 id="location"></h2>
-                  <p id="temperature"></p>
-                  <p id="description"></p>
-                </div>
+              <button id="searchButton" class="btn btn-primary" style="">
+                Search
+              </button>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card px-4 py-5 my-5 text-center border">
+              <div class="card-body">
+                <h2 id="location"></h2>
+                <p id="temperature"></p>
+                <p id="description"></p>
               </div>
             </div>
           </div>
@@ -69,6 +74,5 @@
       </div>
     </div>
     <script src="main.js"></script>
-    <script src="css.css"></script>
   </body>
 </html>

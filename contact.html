@@ -70,9 +70,39 @@
           for contact.
         </div>
       </div>
+      <div class="row">
+        <div class="col">
+          <label for="DataList" class="form-label"
+            >Please tell me why you are reaching out</label
+          >
+          <input
+            class="form-control"
+            list="datalistOptions"
+            id="dataList"
+            placeholder="Type to search..."
+          />
+          <datalist id="datalistOptions">
+            <option value="San Francisco"></option>
+            <option value="New York"></option>
+            <option value="Seattle"></option>
+            <option value="Los Angeles"></option>
+            <option value="Chicago"></option>
+          </datalist>
+
+          <div>
+            <button
+              class="g-recaptcha"
+              data-sitekey="reCAPTCHA_site_key"
+              data-callback="onSubmit"
+              data-action="submit"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="main.js"></script>
-    <script src="css.css"></script>
     <script src="contactForm.js"></script>
     <script src="https://www.google.com/recaptcha/api.js"></script>
   </body>
