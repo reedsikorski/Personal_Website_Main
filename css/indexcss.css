@@ -1,0 +1,35 @@
+/* Defualt Styles #E5FCC2   #9DE0AD   #45ADA8   #547980   #594F4F */
+
+.mb-500 {
+  margin-bottom: 25% !important;
+}
+body {
+  /* background-image: linear-gradient(to bottom, #ff7e5f, #feb47b); */
+  /* background-color: #333; */
+  /* background-color: #0622cc; */
+  /* background-image: linear-gradient(0deg, #0000001e 50%, transparent 50.05%),
+    linear-gradient(232deg, #009c0085 49%, transparent 70.05%),
+    radial-gradient(circle at 63% 50%, #b637ec40 50%, transparent 56.05%); */
+  background-color: #3267a3;
+  background-color: #594f4f;
+  color: white !important;
+  opacity: 0; /* Start fully transparent */
+  transition: opacity 0.8s ease-in; /* Smooth fade-in */
+}
+
+body.loaded {
+  opacity: 1;
+}
+
+.nav-link {
+  color: #9de0ad !important;
+  transition: color 0.3s ease;
+}
+
+/* .navLink {
+  transition: color 0.3s ease;
+} */
+
+.nav-link:hover {
+  color: white;
+}
