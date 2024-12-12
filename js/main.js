@@ -7,6 +7,7 @@ const locationElement = document.getElementById("location");
 const temperatureElement = document.getElementById("temperature");
 const descriptionElement = document.getElementById("description");
 const feelsElement = document.getElementById("feelsLike");
+const backgroundWeatherElement = document.getElementById("weatherElement");
 
 window.addEventListener("load", () => {
   document.body.classList.add("loaded");
@@ -74,4 +75,36 @@ function displayWeather(weather) {
 
   let desc = weather.weather[0].description;
   descriptionElement.innerHTML = desc.charAt(0).toUpperCase() + desc.slice(1);
+
+  let weatherCode = weather.weather[0].id;
+  switch (weatherCode[0]) {
+    case "2":
+      backgroundWeatherElement.style.backgroundImage =
+        "../weather_imgs/thunderstorm.jpg";
+      break;
+    case "3":
+      backgroundWeatherElement.style.backgroundImage =
+        "../weather_imgs/drizzle.jpg";
+      break;
+    case "5":
+      backgroundWeatherElement.style.backgroundImage =
+        "../weather_imgs/rain.jpg";
+      break;
+    case "6":
+      backgroundWeatherElement.style.backgroundImage =
+        "../weather_imgs/snow.jpg";
+      break;
+    case "7":
+      backgroundWeatherElement.style.backgroundImage =
+        "../weather_imgs/fog.jpg";
+      break;
+    case "8":
+      backgroundWeatherElement.style.backgroundImage =
+        "../weather_imgs/clouds.jpg";
+      break;
+    default:
+      backgroundWeatherElement.style.backgroundImage =
+        "../weather_imgs/default.jpg";
+      break;
+  }
 }
