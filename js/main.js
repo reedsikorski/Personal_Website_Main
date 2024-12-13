@@ -77,6 +77,8 @@ function displayWeather(weather) {
   descriptionElement.innerHTML = desc.charAt(0).toUpperCase() + desc.slice(1);
 
   let weatherCode = weather.weather[0].id;
+
+  console.log(typeof weatherCode);
   switch (weatherCode[0]) {
     case "2":
       backgroundWeatherElement.style.backgroundImage =
