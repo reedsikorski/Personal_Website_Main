@@ -78,8 +78,9 @@ function displayWeather(weather) {
 
   let weatherCode = weather.weather[0].id;
 
-  console.log(typeof weatherCode);
-  switch (weatherCode[0]) {
+  let parentCode = Number(weatherCode.toString()[0]);
+  console.log(parentCode);
+  switch (parentCode) {
     case "2":
       backgroundWeatherElement.style.backgroundImage =
         "../weather_imgs/thunderstorm.jpg";
@@ -101,6 +102,7 @@ function displayWeather(weather) {
         "../weather_imgs/fog.jpg";
       break;
     case "8":
+      console.log("800 Code!");
       backgroundWeatherElement.style.backgroundImage =
         "../weather_imgs/clouds.jpg";
       break;
