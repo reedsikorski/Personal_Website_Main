@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Card with Background Image</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Custom styles for the card background */
+      .card {
+        background-image: url("weather_imgs/clear.jpg");
+        background-size: cover; /* Ensures the image covers the entire card */
+        background-position: center; /* Centers the image */
+        color: white; /* Makes text readable on dark backgrounds */
+        height: 700px; /* Set a fixed height for the card */
+      }
+
+      .card-body {
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.5
+        ); /* Adds a translucent overlay for text readability */
+        padding: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="card text-center">
+        <div class="card-body">
+          <h5 class="card-title">Card Title</h5>
+          <p class="card-text">
+            This is a card with a custom background image.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
