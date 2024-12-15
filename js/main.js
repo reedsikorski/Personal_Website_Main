@@ -81,27 +81,27 @@ function displayWeather(weather) {
   let parentCode = Number(weatherCode.toString()[0]);
   console.log(parentCode);
   switch (parentCode) {
-    case "2":
+    case 2:
       backgroundWeatherElement.style.backgroundImage =
         "../weather_imgs/thunderstorm.jpg";
       break;
-    case "3":
+    case 3:
       backgroundWeatherElement.style.backgroundImage =
         "../weather_imgs/drizzle.jpg";
       break;
-    case "5":
+    case 5:
       backgroundWeatherElement.style.backgroundImage =
         "../weather_imgs/rain.jpg";
       break;
-    case "6":
+    case 6:
       backgroundWeatherElement.style.backgroundImage =
         "../weather_imgs/snow.jpg";
       break;
-    case "7":
+    case 7:
       backgroundWeatherElement.style.backgroundImage =
         "../weather_imgs/fog.jpg";
       break;
-    case "8":
+    case 8:
       console.log("800 Code!");
       backgroundWeatherElement.style.backgroundImage =
         "../weather_imgs/clouds.jpg";

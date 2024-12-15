@@ -33,3 +33,7 @@ body.loaded {
 .nav-link:hover {
   color: white;
 }
+
+weatherElement {
+  background-image: "../weather_img/drizle.jpg";
+}
