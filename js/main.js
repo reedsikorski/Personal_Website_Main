@@ -7,7 +7,7 @@ const locationElement = document.getElementById("location");
 const temperatureElement = document.getElementById("temperature");
 const descriptionElement = document.getElementById("description");
 const feelsElement = document.getElementById("feelsLike");
-const backgroundWeatherElement = document.getElementById("weatherElement");
+const weatherElement = document.documentElement.weathercard;
 
 window.addEventListener("load", () => {
   document.body.classList.add("loaded");
@@ -82,33 +82,38 @@ function displayWeather(weather) {
   console.log(parentCode);
   switch (parentCode) {
     case 2:
-      backgroundWeatherElement.style.backgroundImage =
-        "../weather_imgs/thunderstorm.jpg";
+      console.log("200 Code!");
+      weatherElement.style.background = url(
+        "../weather_imgs/resize_thunderstorm.jpg"
+      );
       break;
     case 3:
-      backgroundWeatherElement.style.backgroundImage =
-        "../weather_imgs/drizzle.jpg";
+      console.log("300 Code!");
+      weatherElement.style.backgroundImage =
+        "../weather_imgs/resize_drizzle.jpg";
       break;
     case 5:
-      backgroundWeatherElement.style.backgroundImage =
-        "../weather_imgs/rain.jpg";
+      console.log("500 Code!");
+      weatherElement.style.backgroundImage = "../weather_imgs/resize_rain.jpg";
       break;
     case 6:
-      backgroundWeatherElement.style.backgroundImage =
-        "../weather_imgs/snow.jpg";
+      console.log("600 Code!");
+      weatherElement.style.backgroundImage = "../weather_imgs/resize_snow.jpg";
       break;
     case 7:
-      backgroundWeatherElement.style.backgroundImage =
-        "../weather_imgs/fog.jpg";
+      console.log("700 Code!");
+      weatherElement.style.backgroundImage = "../weather_imgs/resize_fog.jpg";
       break;
     case 8:
       console.log("800 Code!");
-      backgroundWeatherElement.style.backgroundImage =
-        "../weather_imgs/clouds.jpg";
+      weatherElement.style.background = url(
+        "../weather_imgs/resize_clouds.jpg"
+      );
       break;
     default:
-      backgroundWeatherElement.style.backgroundImage =
-        "../weather_imgs/default.jpg";
+      console.log("default Code!");
+      weatherElement.style.backgroundImage =
+        "../weather_imgs/resize_default.jpg";
       break;
   }
 }

@@ -39,7 +39,9 @@ body.loaded {
   background: url("../weather_imgs/drizzle.jpg") !important;
 } */
 
-.weathercard {
-  background: url("../weather_imgs/drizzle.jpg") !important;
+/* .weathercard {
+  background: url("../weather_imgs/resize_drizzle.jpg") !important;
+  /* filter: blur(10px); */
+  color: white;
   background-size: cover;
-}
+} */
