@@ -35,11 +35,11 @@ body.loaded {
   color: white;
 }
 
-.card {
-  background-color: #3267a3;
-}
+/* .card {
+  background: url("../weather_imgs/drizzle.jpg") !important;
+} */
 
-.weatherelement {
-  background: url("../weather_img/drizle.jpg") !important;
+.weathercard {
+  background: url("../weather_imgs/drizzle.jpg") !important;
   background-size: cover;
 }
