@@ -7,7 +7,8 @@ const locationElement = document.getElementById("location");
 const temperatureElement = document.getElementById("temperature");
 const descriptionElement = document.getElementById("description");
 const feelsElement = document.getElementById("feelsLike");
-const weatherElement = document.documentElement.weathercard;
+const weatherElement = document.getElementById("weatherElement");
+// const weatherElement = document.getElementsByClassName("weathercard");
 
 window.addEventListener("load", () => {
   document.body.classList.add("loaded");
@@ -83,32 +84,30 @@ function displayWeather(weather) {
   switch (parentCode) {
     case 2:
       console.log("200 Code!");
-      weatherElement.style.background = url(
-        "../weather_imgs/resize_thunderstorm.jpg"
-      );
+      weatherElement.style.background =
+        "../weather_imgs/resize_thunderstorm.jpg";
       break;
     case 3:
       console.log("300 Code!");
-      weatherElement.style.backgroundImage =
-        "../weather_imgs/resize_drizzle.jpg";
+      weatherElement.style.background = "../weather_imgs/resize_drizzle.jpg";
       break;
     case 5:
       console.log("500 Code!");
-      weatherElement.style.backgroundImage = "../weather_imgs/resize_rain.jpg";
+      weatherElement.style.background = "../weather_imgs/resize_rain.jpg";
       break;
     case 6:
       console.log("600 Code!");
-      weatherElement.style.backgroundImage = "../weather_imgs/resize_snow.jpg";
+      weatherElement.style.background = "../weather_imgs/resize_snow.jpg";
       break;
     case 7:
       console.log("700 Code!");
-      weatherElement.style.backgroundImage = "../weather_imgs/resize_fog.jpg";
+      weatherElement.style.background = "../weather_imgs/resize_fog.jpg";
       break;
     case 8:
       console.log("800 Code!");
-      weatherElement.style.background = url(
-        "../weather_imgs/resize_clouds.jpg"
-      );
+      // weatherElement.style.color = "purple";
+      weatherElement.style.background =
+        "url('../weather_imgs/resize_clear.jpg')";
       break;
     default:
       console.log("default Code!");
