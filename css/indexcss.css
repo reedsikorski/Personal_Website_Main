@@ -35,6 +35,10 @@ body.loaded {
   color: white;
 }
 
+.card {
+  background-color: #3267a3;
+}
+
 .weatherelement {
   background: url("../weather_img/drizle.jpg") !important;
   background-size: cover;
