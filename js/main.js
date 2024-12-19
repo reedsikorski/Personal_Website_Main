@@ -108,9 +108,10 @@ function displayWeather(weather) {
       // weatherElement.style.color = "purple";
       weatherElement.style.background =
         "url('../weather_imgs/resize_clear.jpg')";
+      weatherElement.style.color = "white";
       break;
     default:
-      console.log("default Code!");
+      console.log("Default Code!");
       weatherElement.style.backgroundImage =
         "../weather_imgs/resize_default.jpg";
       break;
