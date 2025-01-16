@@ -72,40 +72,44 @@
       </div>
       <div class="row">
         <div class="col">
-          <label for="DataList" class="form-label"
-            >Please tell me why you are reaching out</label
-          >
-          <input
-            class="form-select"
-            list="datalistOptions"
-            id="dataList"
-            placeholder="Type to search..."
-          />
-          <datalist id="datalistOptions">
-            <option value="Recruiting"></option>
-            <option value="General Questions"></option>
-            <option value="Freelance Work"></option>
-            <option value="Need a friend"></option>
-          </datalist>
-          <div class="form-group-email">
-            <label for="contactEmail">Email address</label>
-            <input
-              type="email"
-              class="form-control"
-              id="contactEmail"
-              placeholder="Enter email..."
-            />
-          </div>
-          <div>
-            <button
-              class="g-recaptcha btn btn-primary"
-              data-sitekey="reCAPTCHA_site_key"
-              data-callback="onSubmit"
-              data-action="submit"
-            >
-              Submit
-            </button>
-          </div>
+          <form>
+            <div class="form-group-search">
+              <label for="DataList" class="form-label"
+                >Please tell me why you are reaching out</label
+              >
+              <input
+                class="form-select"
+                list="datalistOptions"
+                id="dataList"
+                placeholder="Type to search..."
+              />
+              <datalist id="datalistOptions">
+                <option value="Recruiting"></option>
+                <option value="General Questions"></option>
+                <option value="Freelance Work"></option>
+                <option value="Need a friend"></option>
+              </datalist>
+            </div>
+            <div class="form-group-email">
+              <label for="contactEmail">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="contactEmail"
+                placeholder="Enter email..."
+              />
+            </div>
+            <div class="form-group">
+              <button
+                class="g-recaptcha btn btn-primary"
+                data-sitekey="reCAPTCHA_site_key"
+                data-callback="onSubmit"
+                data-action="submit"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
