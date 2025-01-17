@@ -74,7 +74,7 @@
         <div class="col">
           <form>
             <div class="form-group-search">
-              <label for="DataList" class="form-label"
+              <label for="contactList"
                 >Please tell me why you are reaching out</label
               >
               <input
@@ -99,8 +99,9 @@
                 placeholder="Enter email..."
               />
             </div>
-            <div class="form-row">
+            <div class="row">
               <div class="col">
+                <label for="contactFName">First Name</label>
                 <input
                   type="text"
                   class="form-control"
@@ -108,12 +109,24 @@
                 />
               </div>
               <div class="col">
+                <label for="contactLName">Last Name</label>
                 <input
                   type="text"
                   class="form-control"
                   placeholder="Last name"
                 />
               </div>
+            </div>
+            <div class="form-group">
+              <label for="contactTextArea">Anything else I need to know?</label>
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <button type="button" class="btn btn-primary">Submit</button>
             </div>
           </form>
         </div>
